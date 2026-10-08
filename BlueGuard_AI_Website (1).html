@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BlueGuard AI | Life Below Water</title>
+<style>
+:root{
+  --blue:#0879c9; --deep:#063b68; --cyan:#16b9d4; --green:#1c9b70;
+  --light:#eefaff; --white:#fff; --text:#17324d; --muted:#5d7285;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--text);background:#f7fcff;line-height:1.6}
+nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);box-shadow:0 2px 14px #073b6818}
+.nav-inner{max-width:1150px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:14px 22px}
+.logo{font-size:22px;font-weight:800;color:var(--deep)}
+.logo span{color:var(--cyan)}
+nav a{color:var(--text);text-decoration:none;margin-left:22px;font-weight:600}
+nav a:hover{color:var(--blue)}
+.hero{min-height:88vh;display:flex;align-items:center;background:
+linear-gradient(135deg,#e9faff 0%,#d7f5ff 48%,#c9f1e4 100%);position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;width:700px;height:700px;border-radius:50%;right:-300px;top:-250px;background:#16b9d425}
+.hero-inner{max-width:1150px;width:100%;margin:auto;padding:80px 22px;display:grid;grid-template-columns:1.15fr .85fr;gap:45px;align-items:center;position:relative;z-index:1}
+.badge{display:inline-block;padding:8px 15px;border-radius:30px;background:#fff;color:var(--green);font-weight:800;margin-bottom:18px}
+h1{font-size:clamp(42px,6vw,72px);line-height:1.03;color:var(--deep);margin-bottom:18px}
+h1 span{color:var(--blue)}
+.hero p{font-size:20px;color:var(--muted);max-width:650px}
+.btn{display:inline-block;margin-top:28px;padding:13px 22px;border-radius:30px;background:var(--blue);color:white;text-decoration:none;font-weight:800;box-shadow:0 8px 22px #0879c43b}
+.btn.alt{background:white;color:var(--blue);margin-left:10px}
+.ocean-card{background:linear-gradient(180deg,#0b8bcf,#075181);border-radius:35px;padding:30px;color:white;min-height:360px;display:flex;flex-direction:column;justify-content:center;align-items:center;box-shadow:0 25px 55px #063b6830}
+.fish{font-size:120px;margin-bottom:12px}
+.wave{font-size:34px;letter-spacing:8px;color:#8defff}
+section{padding:80px 22px}
+.container{max-width:1150px;margin:auto}
+.section-title{text-align:center;margin-bottom:45px}
+.section-title h2{font-size:38px;color:var(--deep)}
+.section-title p{color:var(--muted);max-width:700px;margin:8px auto}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:white;border-radius:20px;padding:25px;box-shadow:0 8px 30px #063b6812;border:1px solid #d9eef7}
+.card h3{color:var(--deep);margin:10px 0}
+.icon{font-size:38px}
+.card ul{padding-left:20px;color:var(--muted)}
+.problem{background:#fff}
+.solution{background:#eefaff}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:25px}
+.stat{background:white;padding:25px;border-radius:18px;text-align:center;box-shadow:0 8px 25px #063b6810}
+.stat strong{display:block;font-size:34px;color:var(--blue)}
+.dashboard{background:#063b68;color:white}
+.dashboard .section-title h2,.dashboard .section-title p{color:white}
+.dashboard-box{background:#0a527e;border:1px solid #ffffff22;border-radius:25px;padding:28px}
+.meter{height:13px;background:#ffffff22;border-radius:20px;overflow:hidden;margin:9px 0 20px}
+.meter span{display:block;height:100%;background:#35d6b0;border-radius:20px}
+.contact{background:linear-gradient(135deg,#e7fbff,#e5fff3)}
+footer{background:#042d4f;color:white;text-align:center;padding:28px 20px}
+footer strong{color:#5de1c2}
+@media(max-width:800px){
+ .hero-inner{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}
+ nav a{margin-left:10px;font-size:13px}.nav-inner{padding:12px}
+}
+@media(max-width:480px){.stats{grid-template-columns:1fr}.btn.alt{margin-left:0}.hero{min-height:auto}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="logo">BlueGuard <span>AI</span></div>
+    <div>
+      <a href="#problem">Problem</a>
+      <a href="#solution">Solution</a>
+      <a href="#impact">Impact</a>
+      <a href="#about">About</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="badge">🌊 SDG 14 • LIFE BELOW WATER</div>
+      <h1>Protect our <span>oceans</span> with AI.</h1>
+      <p>BlueGuard AI is a smart ocean and coastal pollution monitoring system that combines IoT sensors, AI, cameras and community reporting to detect pollution early and protect marine life.</p>
+      <a class="btn" href="#solution">Explore the Solution</a>
+      <a class="btn alt" href="#impact">See Impact</a>
+    </div>
+    <div class="ocean-card">
+      <div class="fish">🐟</div>
+      <h2>Cleaner Oceans</h2>
+      <p>Healthy water • Healthy marine life • Sustainable future</p>
+      <div class="wave">〰 〰 〰</div>
+    </div>
+  </div>
+</header>
+
+<section id="problem" class="problem">
+  <div class="container">
+    <div class="section-title">
+      <h2>🌍 The Problem</h2>
+      <p>Pollution can spread quickly, while monitoring is often slow, manual and expensive.</p>
+    </div>
+    <div class="grid">
+      <div class="card"><div class="icon">🧴</div><h3>Plastic Pollution</h3><p>Plastic and waste enter rivers, beaches and oceans, harming marine ecosystems.</p></div>
+      <div class="card"><div class="icon">⚠️</div><h3>Late Detection</h3><p>Pollution incidents and illegal dumping may be discovered only after damage has occurred.</p></div>
+      <div class="card"><div class="icon">🐢</div><h3>Threat to Marine Life</h3><p>Fish, turtles, coral and other organisms are affected by polluted water and habitats.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="solution" class="solution">
+  <div class="container">
+    <div class="section-title">
+      <h2>🤖 Our Smart Solution</h2>
+      <p>BlueGuard AI creates an early-warning network for cleaner oceans.</p>
+    </div>
+    <div class="grid">
+      <div class="card"><div class="icon">📡</div><h3>IoT Water Sensors</h3><ul><li>pH monitoring</li><li>Dissolved oxygen</li><li>Turbidity</li><li>Temperature and location</li></ul></div>
+      <div class="card"><div class="icon">🧠</div><h3>AI Detection</h3><ul><li>Analyze sensor data</li><li>Detect unusual patterns</li><li>Classify pollution risks</li><li>Generate alerts</li></ul></div>
+      <div class="card"><div class="icon">🚁</div><h3>Camera & Drone Monitoring</h3><ul><li>Surface pollution detection</li><li>Waste hotspot mapping</li><li>Visual evidence</li><li>Remote monitoring</li></ul></div>
+      <div class="card"><div class="icon">📱</div><h3>Live Dashboard</h3><ul><li>Real-time readings</li><li>Pollution alerts</li><li>Location-based maps</li><li>Reports and history</li></ul></div>
+      <div class="card"><div class="icon">👥</div><h3>Community Reporting</h3><ul><li>Citizen reports</li><li>Photo uploads</li><li>Pollution location</li><li>Awareness campaigns</li></ul></div>
+      <div class="card"><div class="icon">🌱</div><h3>Action & Prevention</h3><ul><li>Identify hotspots</li><li>Support cleanup teams</li><li>Track improvement</li><li>Protect marine habitats</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="impact">
+  <div class="container">
+    <div class="section-title">
+      <h2>📊 Expected Impact</h2>
+      <p>Key metrics that can be used to measure the success of the project.</p>
+    </div>
+    <div class="stats">
+      <div class="stat"><strong>24/7</strong>Monitoring</div>
+      <div class="stat"><strong>AI</strong>Early Alerts</div>
+      <div class="stat"><strong>IoT</strong>Water Data</div>
+      <div class="stat"><strong>SDG 14</strong>Aligned</div>
+    </div>
+  </div>
+</section>
+
+<section class="dashboard">
+  <div class="container">
+    <div class="section-title">
+      <h2>🌊 Sample Water Monitoring Dashboard</h2>
+      <p>A simple demonstration of how BlueGuard AI could display sensor information.</p>
+    </div>
+    <div class="dashboard-box">
+      <h3>Coastal Zone A — Water Quality</h3>
+      <p>Water Quality Score</p>
+      <div class="meter"><span style="width:82%"></span></div>
+      <p>Pollution Risk: <strong>Low</strong></p>
+      <div class="meter"><span style="width:28%"></span></div>
+      <p>Sensor Status: <strong>Online</strong> • Last update: Just now</p>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="contact">
+  <div class="container">
+    <div class="section-title">
+      <h2>💙 About the Project</h2>
+      <p><strong>Project:</strong> BlueGuard AI – Smart Ocean & Coastal Pollution Monitoring System</p>
+      <p><strong>SDG:</strong> Goal 14 – Life Below Water</p>
+      <p><strong>Designed by:</strong> Sakshi Nayakawdi</p>
+      <p><strong>Date:</strong> 8/10/2025</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>🌊 <strong>BlueGuard AI</strong> • Together for a Blue Tomorrow</p>
+  <p>SDG 14 — Life Below Water</p>
+</footer>
+
+</body>
+</html>
